@@ -1,0 +1,23 @@
+<style>
+:root {
+    --font-family:'暗黒ゾン字', 'AnkokuZombic', suns-serif;
+}
+* {
+    font-family: var(--font-family);
+    /*
+    font-family: '暗黒ゾン字', 'AnkokuZombic', suns-serif;
+    */
+}
+</style>
+<h1>あいうえお山田１２３ABC</h1>
+<p>あいうえお山田１２３ABC</p>
+<textarea>あいうえお山田１２３ABC</textarea>
+<select>
+  <option value="'暗黒ゾン字', 'AnkokuZombic', suns-serif">暗黒ゾン字</option>
+  <option value="'渦筆', 'uzu-fude', suns-serif">渦筆</option>
+</select>
+<script>
+document.querySelector('select').addEventListener('change',(e)=>{
+    document.querySelector(':root').style.setProperty('--font-family', e.target.value);
+});
+</script>
